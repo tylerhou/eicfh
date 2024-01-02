@@ -1,9 +1,7 @@
 # Enable Bzlmod for every Bazel command
 common --enable_bzlmod
 
-
 build --repo_env="CC=clang-18"
 build --repo_env="CXX=clang++-18"
 
-build --action_env="BAZEL_CXXOPTS=-std=c++23:-stdlib=libc++"
-build --action_env="BAZEL_LINKOPTS=-lc++"
+build --action_env="BAZEL_CXXOPTS=-std=c++23:-D_GLIBCXX_USE_CXX11_ABI=1"

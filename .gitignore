@@ -1,3 +1,5 @@
 # Bazel symlinks
 /bazel-*
 # /compile_commands.json is ignored in .git/info/exclude
+
+/third_party/Halide/Halide-16.0.0-arm-64-linux/share

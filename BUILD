@@ -10,6 +10,7 @@ refresh_compile_commands(
 cc_binary(
     name = "main",
     srcs = ["main.cc"],
+    deps = ["//third_party:Halide"],
 )
 
 cc_test(
